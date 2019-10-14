@@ -14,3 +14,5 @@ In short, with this problem the genetic algorithm tries to find a five-qubit qua
 * **Makefile**     Slightly modified Makefile that recognizes the QPCA.hpp and includes the Armadillo library.
 
 * **quantum.cpp**  Slightly modified main file of the algorithm that recognizes the QPCA.hpp and changes the qubit count.
+
+After succesful installation of the genetic algorithm, this problem works by replacing the Makefile and quantum.cpp files with the ones provided here. The QPCA.hpp file must be placed within the /include/QGA_Problem directory of the genetic algorithm.
