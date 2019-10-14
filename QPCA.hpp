@@ -8,7 +8,6 @@ namespace {
 
 using QGA::Backend::State;
 
-// using Gene = QGA::Gene<QGA::Gates::CNOT::WithControls<QGA::Controls::ANY>, QGA::Gates::Fixed>;
 using Gene = QGA::Gene<QGA::Gates::CNOT::WithControls<QGA::Controls::ANY>, QGA::Gates::XYZ::WithControls<QGA::Controls::ANY>, QGA::Gates::SWAP, QGA::Gates::Fixed::WithControls<QGA::Controls::ANY>>;
 class Candidate : public QGA::CandidateBase<Candidate, Gene, double, unsigned>
 {
@@ -74,15 +73,7 @@ public:
   }
 
   std::ostream& print_full(std::ostream& os) const {
-    // unsigned dim = 1 << Config::nBit;
-    // State psi{};
     os << '\n';
-    // for(unsigned i = 0; i < dim; i++) {
-    //   psi.reset(i);
-    //   State out = sim(psi);
-    //   os << out;
-    //   os << '\n';
-    // }
     os << "print_full unimplemented";
     os << '\n';
     return os;
