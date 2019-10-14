@@ -23,8 +23,6 @@
   #endif
 #elif defined(SEARCH)
   #include "QGA_Problem/Search.hpp"
-#elif defined(TEST)
-  #include "QGA_Problem/test.hpp"
 #elif defined(QPCA)
   #include "QGA_Problem/QPCA.hpp"
 #else
