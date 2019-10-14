@@ -18,7 +18,7 @@ LIBS = regex.o	# see LIBS += below
 LIBS_DIR = libs
 LIBS_FULL = $(foreach LIB,$(LIBS),$(LIBS_DIR)/$(LIB))
 
-TARGETS := simple fourier search test qpca
+TARGETS := simple fourier search qpca
 default: search
 
 CXXFLAGS += -std=c++11 -march=native
@@ -49,8 +49,6 @@ endif
 fourier: CXXFLAGS += -DFOURIER
 
 search:	CXXFLAGS += -DSEARCH
-
-test: CXXFLAGS += -DTEST
 
 qpca: CXXFLAGS += -DQPCA
 
