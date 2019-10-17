@@ -7,7 +7,7 @@ In short, with this problem the genetic algorithm tries to find a five-qubit qua
 
 ![Alt Text](inputs_outputs.png)
 
-## The included files:
+## The included files
 
 * **QPCA.hpp**     The header file that defines the functions needed for the purity calculation problem.
 
@@ -16,3 +16,7 @@ In short, with this problem the genetic algorithm tries to find a five-qubit qua
 * **quantum.cpp**  Slightly modified main file of the algorithm that recognizes the QPCA.hpp and changes the qubit count.
 
 After succesful installation of the genetic algorithm, this problem works by replacing the Makefile and quantum.cpp files with the ones provided here. The QPCA.hpp file must be placed within the /include/QGA_Problem directory of the genetic algorithm.
+
+##
+
+Adapted from the work in https://github.com/vasekp/quantum-ga by Henrik Romppainen.
